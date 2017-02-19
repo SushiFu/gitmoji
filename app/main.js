@@ -1,15 +1,14 @@
 // Core requires
-const electron = require('electron');
-const Menubar = require('menubar');
 const path = require('path')
+const menubar = require('menubar')
 
 // Menubar Init
-const menubar = Menubar({
+const Menubar = menubar({
     width: 400,
     height: 576,
     index: 'file://' + path.join(__dirname, 'app.html'),
-    icon: __dirname + '/menubar_icon@2x.png',
+    icon: 'file://' + path.join(__dirname, '/menubar_icon@2x.png'),
     resizable: false,
-    title: "gitmoji"
-});
-menubar.on('ready', () => {});
+    title: 'gitmoji'
+})
+Menubar.on('ready', () => {})
