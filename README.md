@@ -4,7 +4,7 @@
 # gitmoji
 > An emoji guide for your commit messages
 
-[![gitmoji](https://img.shields.io/badge/gitmoji-%20%F0%9F%98%9C%20%F0%9F%98%8D-FFDD67.svg?style=flat-square)](https://gitmoji.carloscuesta.me/) [![Travis](https://img.shields.io/travis/Meadowcottage/gitmoji/master.svg?style=flat-square)](https://travis-ci.org/Meadowcottage/gitmoji) [![Release](https://img.shields.io/github/release/Meadowcottage/gitmoji.svg?style=flat-square)](https://github.com/Meadowcottage/gitmoji/releases) [![Downloads](https://img.shields.io/github/downloads/Meadowcottage/gitmoji/total.svg?style=flat-square)](https://github.com/Meadowcottage/gitmoji/releases)
+[![gitmoji](https://img.shields.io/badge/gitmoji-%20%F0%9F%98%9C%20%F0%9F%98%8D-FFDD67.svg?style=flat-square)](https://gitmoji.carloscuesta.me/) [![License](https://img.shields.io/aur/license/yaourt.svg?style=flat-square&colorB=f44336)](https://github.com/Meadowcottage/gitmoji/blob/master/LICENSE) [![Travis](https://img.shields.io/travis/Meadowcottage/gitmoji/master.svg?style=flat-square&colorB=8BC34A)](https://travis-ci.org/Meadowcottage/gitmoji) [![Release](https://img.shields.io/github/release/Meadowcottage/gitmoji.svg?style=flat-square&colorB=2196F3)](https://github.com/Meadowcottage/gitmoji/releases) [![Downloads](https://img.shields.io/github/downloads/Meadowcottage/gitmoji/total.svg?style=flat-square&colorB=FF9800)](https://github.com/Meadowcottage/gitmoji/releases)
 
 </br>
 </br>
