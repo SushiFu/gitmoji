@@ -47,25 +47,15 @@
   "devDependencies": {
     "electron": "^1.4.10",
     "electron-builder": "^10.3.0",
-    "mocha": "^3.2.0",
     "rimraf": "^2.5.4",
-    "spectron": "^3.4.0",
     "xo": "^0.17.1"
   },
-  "dependencies": {
-    "electron-config": "^0.2.1",
-    "electron-context-menu": "^0.6.0",
-    "electron-dl": "^1.5.0",
-    "electron-is-dev": "^0.1.2"
-  },
   "packageIgnore": [
-    "LICENSE.md",
     "LICENSE",
     "README.md",
     ".DS_Store",
     ".travis.yml",
     "appveyor.yml",
-    "test",
     "dist",
     "build/Screenshot.png"
   ]
