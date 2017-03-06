@@ -23,7 +23,6 @@
     "url": "https://github.com/Meadowcottage/gitmoji.git"
   },
   "dependencies": {
-    "electron": "^1.6.1",
     "electron-pug": "^1.5.1",
     "menubar": "^5.2.3"
   }
