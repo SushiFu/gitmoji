@@ -4,7 +4,7 @@ const menubar = require('menubar')
 
 // Menubar Init
 const Menubar = menubar({
-    width: 400,
+    width: 376,
     height: 576,
     resizable: false,
     title: 'gitmoji',
