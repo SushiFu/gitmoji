@@ -1,0 +1,14 @@
+script.
+    var menubar = require('menubar')
+    var electron = require('electron')
+    var clipboard = electron.clipboard
+
+    if (process.platform == "win32") {
+        var emoji = document.getElementById('#emoji');
+        emoji.setAttribute("style", "margin-left: -75px; margin-top: -15px;");
+    }
+
+    function copyEmoji(emojiType)
+    {
+        clipboard.writeText(':' + emojiType + ':')
+    }
