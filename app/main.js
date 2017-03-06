@@ -1,11 +1,13 @@
-// Core requires
+// File system path
 const path = require('path')
+
+// Menubar
 const menubar = require('menubar')
 
 // PugJS
 require('electron-pug')({pretty: true})
 
-// Menubar Init
+// Menubar Constructor
 const Menubar = menubar({
     width: 376,
     height: 576,
