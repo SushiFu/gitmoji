@@ -12,6 +12,7 @@ const mb = menubar({
     width: 376,
     height: 576,
     resizable: false,
+    preloadWindow: true,
     title: 'gitmoji',
     index: 'file://' + path.join(__dirname, 'index.pug')
 })
