@@ -17,6 +17,12 @@ script.
             })
         }
     })
+    $('input').keypress(function (e) {
+        if(e.which == 13) {
+            var emoji = $('.card:visible:first').attr('id').replace('emoji ', '')
+            copyEmoji(emoji)
+        }
+    })
 
     var electron = require('electron')
     var clipboard = electron.clipboard
