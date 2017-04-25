@@ -1,7 +1,26 @@
 script.
-    var menubar = require('menubar')
+    // Add search w/ JQuery & Copy first w/ enter
+    window.$ = window.jQuery = require('jquery')
+    $('input').on('change paste keyup', function () {
+        var query = $(this).val().toLowerCase()
+        if (query.length === 0) {
+            $('.card').show()
+        }
+        else {
+            $('.card').each(function() {
+                if ($(this).find('p').text().toLowerCase().indexOf(query) != -1) {
+                    $(this).show()
+                }
+                else {
+                    $(this).hide()
+                }
+            })
+        }
+    })
+
     var electron = require('electron')
     var clipboard = electron.clipboard
+    var menubar = electron.remote.getGlobal('menubar')
 
     if (process.platform == "win32") {
         var emoji = document.getElementById('#emoji');
@@ -11,4 +30,10 @@ script.
     function copyEmoji(emojiType)
     {
         clipboard.writeText(':' + emojiType + ':')
+        menubar.hideWindow()
+    }
+
+    function exit()
+    {
+        electron.remote.app.quit()
     }
