@@ -1,7 +1,7 @@
 script.
-    var menubar = require('menubar')
     var electron = require('electron')
     var clipboard = electron.clipboard
+    var menubar = electron.remote.getGlobal('menubar')
 
     if (process.platform == "win32") {
         var emoji = document.getElementById('#emoji');
@@ -11,4 +11,5 @@ script.
     function copyEmoji(emojiType)
     {
         clipboard.writeText(':' + emojiType + ':')
+        menubar.hideWindow()
     }
