@@ -13,3 +13,8 @@ script.
         clipboard.writeText(':' + emojiType + ':')
         menubar.hideWindow()
     }
+
+    function exit()
+    {
+        electron.remote.app.quit()
+    }
