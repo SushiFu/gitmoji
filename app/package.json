@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "electron-pug": "^1.5.1",
-    "menubar": "^5.2.3"
+    "menubar": "^5.2.3",
+    "jquery": "^3.2.1"
   }
 }

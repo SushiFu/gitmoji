@@ -29,7 +29,7 @@ body {
 
 .header h2 {
     font-size: 15px;
-    margin-bottom: -8px;
+    margin-top: 10px;
     cursor: default;
 }
 
@@ -46,10 +46,16 @@ body {
     cursor: default;
 }
 
+.header input {
+    width: 300px;
+    text-align: center;
+}
+
 .content {
     text-align: center;
     -webkit-user-select: none;
     margin-top: -2px;
+    min-height: 348px;
 }
 
 .content>.card {

@@ -1,4 +1,29 @@
 script.
+    // Add search w/ JQuery & Copy first w/ enter
+    window.$ = window.jQuery = require('jquery')
+    $('input').on('change paste keyup', function () {
+        var query = $(this).val().toLowerCase()
+        if (query.length === 0) {
+            $('.card').show()
+        }
+        else {
+            $('.card').each(function() {
+                if ($(this).find('p').text().toLowerCase().indexOf(query) != -1) {
+                    $(this).show()
+                }
+                else {
+                    $(this).hide()
+                }
+            })
+        }
+    })
+    $('input').keypress(function (e) {
+        if(e.which == 13) {
+            var emoji = $('.card:visible:first').attr('id').replace('emoji ', '')
+            copyEmoji(emoji)
+        }
+    })
+
     var electron = require('electron')
     var clipboard = electron.clipboard
     var menubar = electron.remote.getGlobal('menubar')
